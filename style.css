@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Cardo:regular,italic,700);
+
+:root {
+    --cor1: #b4445c;
+    --cor2: #fcf3f3;
+    --cor3: #576a33;
+    --cor4: #8a9163;
+    --cor5: #d2cea7;
+    --cor6: #000;
+    --cor7: #8c6547; 
+
+    --font1: 'Ubuntu', sans-serif;
+    --font2: 'Parisienne', sans-serif;
+    --font3: 'Cardo', sans-serif;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+.conteiner-header {
+    width: 100vw; height: 100vh;
+    position: relative;
+}
+
+/*imagem principal*/
+
+#conteiner-image {
+    width: 100%; height: 100%;
+    position: absolute; top: 0; z-index: -10000;
+    background-image: url(foto\ casal.jpg);
+    background-size: cover; background-position: center;
+}
+
+/*header-section 01*/
+
+.header {
+    height: 150px; font-size: 2rem;
+    display: flex; align-items: center;
+}
+
+#bnt-mobile a {
+    text-decoration: none; color: var(--cor2);
+    font-size: 2.2rem;
+    display: none;
+}
+
+.list {
+    height: 80px; width: 100%; gap: 2rem; text-align: center;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+#button_list {
+    border: 0.3rem solid var(--cor2); border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem; font-family: var(--font1);
+    color: var(--cor2);
+}
+
+#button_list:hover {
+    cursor: pointer;
+    background-color: var(--cor2);
+    color: var(--cor7);
+}
+
+#button_presença {
+    border: 0.3rem solid var(--cor2); border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem; font-family: var(--font1);
+    color: var(--cor7); background-color: var(--cor2);
+}
+
+.header-text {
+    width: 100%;
+    display: flex; flex-direction: column; align-items: center;
+    position: absolute; bottom: 15rem;
+    color: var(--cor2);
+}
+.header-text h1 {
+    font-size: 3.5rem; font-family: var(--font3);
+}
+.header-text h2 {
+    font-family: var(--font3); font-size: 1.8rem;
+}
+
+
+/*responsividade-mobile*/
+@media (max-width: 450px) {
+    .header {padding-left: 3rem;}
+}
+
+/*section 2 ----------------------------------------------------*/
+
+.conteiner-informacoes {
+    width: 100vw; height: 100vh;
+    position: relative;
+}
+
+.informacoes-header {
+    height: 180px;
+    display: flex; align-items: center; justify-content: center;
+    padding-top: 2rem;
+}
+
+#logo-casal {
+    background-image: url(logo.png);
+    background-size: cover; background-position: center;
+    width: 150px; height: 150px; border-radius: 150px;
+}
+
+.informacoes-text {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 0rem 9rem 0rem 9rem;
+    text-align: center; gap: 1.5rem;
+}
+
+.informacoes-text h1 {
+    font-family: var(--font2); font-size: 4rem;
+}
+.informacoes-text h2 {
+    font-family: var(--font3); font-size: 1.5rem;
+}
+.informacoes-text p {
+    font-family: var(--font3); font-size: 1rem;
+    font-weight: bolder;
+}
+
+/*informacoes footer*/
+
+.informacoes-footer {
+    height: 150px; width: 100%;
+    position: absolute; bottom: 0;
+    display: flex; justify-content: center;
+}
+/*
+.links {
+    display: flex; gap: 2rem;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none; 
+    font-size: 3rem; color: var(--cor6);
+}
+.links p {
+    font-family: var(--font1); color: var(--cor6);
+    font-weight: bold; font-size: 0.8rem;
+}
+*/
+#conteiner-image2 {
+    width: 100%; height: 100%;
+    position: absolute; top: 0; z-index: -10000;
+    background-image: url(algodao.jpg);
+    background-size: cover; background-position: center;
+    opacity: 20%;
+}
+/*responsividade-mobile*/
+
+@media (max-width: 450px) {
+    #logo-casal {width: 120px; height: 120px; border-radius: 120px;}
+    .informacoes-text {padding: 0rem 2rem 0rem 2rem;}
+    .informacoes-text h1 {font-size: 2rem;}
+    .informacoes-text h2 {font-size: 0.75rem;}
+    .informacoes-text p {font-size: 0.8rem;}
+    .informacoes-footer {height: 150px;}
+}
+
+@media (min-width: 451px) and (max-width: 768px) {
+    #logo-casal {width: 140px; height: 140px; border-radius: 140px;}
+    .informacoes-text {padding: 0rem 2rem 0rem 2rem;}
+    .informacoes-text h1 {font-size: 3rem;}
+    .informacoes-text h2 {font-size: 1rem;}
+    .informacoes-text p {font-size: 0.75rem;}
+    .informacoes-footer {height: 120px;}
+}
+
+@media (min-width: 769px) and (max-width: 1334px) {
+    #logo-casal {width: 140px; height: 140px; border-radius: 140px;}
+    .informacoes-text {padding: 0rem 2rem 0rem 2rem;}
+    .informacoes-text h1 {font-size: 3rem;}
+    .informacoes-text h2 {font-size: 1rem;}
+    .informacoes-text p {font-size: 0.75rem;}
+    .informacoes-footer {height: 120px;}
+}
+
+/*Estilização página aviso*/
+
+.conteiner_aviso {
+    height: 100vh; width: 100vw;
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column; text-align: center;
+    padding: 0rem 2.5rem; gap: 2rem;
+}
+.conteiner_aviso p {
+    font-family: var(--font1); font-size: 1.2rem;
+}
+.conteiner_aviso button {
+    font-family: var(--font1); font-size: 1.2rem;
+    color: var(--cor2); background-color: var(--cor1);
+    border: none; border-radius: 2rem; padding: 1rem;
+}
+
+.conteiner_aviso button:hover {
+    cursor: pointer;
+}
+
+#image_aviso {
+    width: 100%; height: 100%;
+    position: absolute; top: 0; z-index: -10000;
+    background-image: url(algodao.jpg);
+    background-size: cover; background-position: center;
+    opacity: 20%;
+}
