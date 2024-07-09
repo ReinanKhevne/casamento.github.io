@@ -131,7 +131,7 @@ html, body {
 
 /*responsividade-mobile*/
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 620px) {
     .header-text h1 {font-size: 2.5rem;}
     .header-text h2 {font-size: 1.4rem;}
     .footer_conteiner {height: 8rem;}
@@ -146,6 +146,22 @@ html, body {
         position: absolute; right: 3.5rem; color: var(--cor7);
     }
 
+}
+
+@media screen and (min-width: 375px) and (max-width: 620px) {
+    .header-text h1 {font-size: 2rem;}
+    .header-text h2 {font-size: 1rem;}
+    .footer_conteiner {height: 5rem;}
+    #button_presença {padding: 0.3rem 0.8rem;}
+    #frase {font-size: 1rem; margin: 0 1rem;}
+
+    .menu {display: none;}
+
+
+    #bnt-mobile {
+        display: block; z-index: 100000;
+        position: absolute; right: 3.5rem; color: var(--cor7);
+    }
 }
 
 /*Estilização página aviso*/
