@@ -66,6 +66,22 @@ html, body {
     background-color: var(--cor2); color: var(--cor7);
 }
 
+.nav.active .menu {
+   display: flex; justify-content: center; align-items: center; flex-direction: column;
+   background-color: var(--cor7);
+   position: absolute; top: 0; z-index: 10000;
+   width: 100%; height: 100vh; transition: .6s;
+}
+
+.nav.active .menu a {
+    border: 0; border-radius: 0;
+    background-color: var(--cor2); color: var(--cor7);
+    width: 100%; height: 7rem;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.nav.active #bnt-mobile {color: var(--cor2);}
+
 #bnt-mobile {
     display: none; color: var(--cor2); cursor: pointer;
 }
@@ -119,8 +135,8 @@ html, body {
 
 
     #bnt-mobile {
-        display: block;
-        position: absolute; left: 3.5rem
+        display: block; z-index: 100000;
+        position: absolute; right: 3.5rem; color: var(--cor7);
     }
 
 }
