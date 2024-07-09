@@ -46,32 +46,28 @@ html, body {
     display: flex; align-items: center;
 }
 
-#bnt-mobile a {
-    text-decoration: none; color: var(--cor2);
-    font-size: 2.2rem;
-    display: none;
+.nav {
+    width: 100%;
+    display: flex; justify-content: center;
 }
 
-.list {
-    height: 80px; width: 100%; gap: 2rem; text-align: center;
-    display: flex; align-items: center; justify-content: center;
+.menu {
+    display: flex; justify-content: center; text-align: center;
+    gap: 1rem; font-family: var(--font1); font-size: 1.4rem;
 }
 
-.list a {
-    text-decoration: none;
+.menu a {
+    text-decoration: none; list-style: none; color: var(--cor2);
+    display: flex; gap: 0.5rem; border: 0.3rem solid var(--cor2);
+    padding: 0.8rem 0.5rem; border-radius: 2rem;
 }
 
-#button_list {
-    border: 0.3rem solid var(--cor2); border-radius: 2rem;
-    padding: 1rem;
-    font-size: 1.1rem; font-family: var(--font1);
-    color: var(--cor2);
+.menu a:hover {
+    background-color: var(--cor2); color: var(--cor7);
 }
 
-#button_list:hover {
-    cursor: pointer;
-    background-color: var(--cor2);
-    color: var(--cor7);
+#bnt-mobile {
+    display: none; color: var(--cor2); cursor: pointer;
 }
 
 #button_presença {
@@ -108,96 +104,25 @@ html, body {
     color: var(--cor2); font-family: var(--font2); font-size: 1.8rem;
 }
 
+
+
 /*responsividade-mobile*/
-@media (max-width: 645px) {
-    .header {padding-left: 3rem;}
-    .list {display: none;}
+
+@media screen and (max-width: 645px) {
     .header-text h1 {font-size: 2.5rem;}
     .header-text h2 {font-size: 1.4rem;}
     .footer_conteiner {height: 8rem;}
     #button_presença {padding: 0.5rem 1rem;}
     #frase {font-size: 1.4rem;}
-    #bnt-mobile a {display: flex;}
-}
 
-/*section 2 ----------------------------------------------------*/
+    .menu {display: none;}
 
-.conteiner-informacoes {
-    width: 100vw; height: 100vh;
-    position: relative;
-}
 
-.informacoes-header {
-    height: 180px;
-    display: flex; align-items: center; justify-content: center;
-    padding-top: 2rem;
-}
+    #bnt-mobile {
+        display: block;
+        position: absolute; left: 3.5rem
+    }
 
-#logo-casal {
-    background-image: url(logo.png);
-    background-size: cover; background-position: center;
-    width: 150px; height: 150px; border-radius: 150px;
-}
-
-.informacoes-text {
-    display: flex; flex-direction: column; align-items: center;
-    padding: 0rem 9rem 0rem 9rem;
-    text-align: center; gap: 1.5rem;
-}
-
-.informacoes-text h1 {
-    font-family: var(--font2); font-size: 4rem;
-}
-.informacoes-text h2 {
-    font-family: var(--font3); font-size: 1.5rem;
-}
-.informacoes-text p {
-    font-family: var(--font3); font-size: 1rem;
-    font-weight: bolder;
-}
-
-/*informacoes footer*/
-
-.informacoes-footer {
-    height: 150px; width: 100%;
-    position: absolute; bottom: 0;
-    display: flex; justify-content: center;
-}
-
-#conteiner-image2 {
-    width: 100%; height: 100%;
-    position: absolute; top: 0; z-index: -10000;
-    background-image: url(algodao.jpg);
-    background-size: cover; background-position: center;
-    opacity: 20%;
-}
-/*responsividade-mobile*/
-
-@media (max-width: 450px) {
-    #logo-casal {width: 120px; height: 120px; border-radius: 120px;}
-    .informacoes-text {padding: 0rem 2rem 0rem 2rem;}
-    .informacoes-text h1 {font-size: 2rem;}
-    .informacoes-text h2 {font-size: 0.75rem;}
-    .informacoes-text p {font-size: 0.8rem;}
-    .informacoes-footer {height: 150px;}
-}
-
-@media (min-width: 451px) and (max-width: 768px) {
-    #logo-casal {width: 140px; height: 140px; border-radius: 140px;}
-    .informacoes-text {padding: 0rem 2rem 0rem 2rem;}
-    .informacoes-text h1 {font-size: 3rem;}
-    .informacoes-text h2 {font-size: 1rem;}
-    .informacoes-text p {font-size: 0.75rem;}
-    .informacoes-footer {height: 120px;}
-}
-
-@media (min-width: 769px) and (max-width: 1334px) {
-    #logo-casal {width: 140px; height: 140px; border-radius: 140px;}
-    .informacoes-text {padding: 0rem 2rem 0rem 2rem;}
-    .informacoes-text h1 {font-size: 3rem;}
-    .informacoes-text h2 {font-size: 1rem;}
-    .informacoes-text p {font-size: 0.75rem;}
-    .informacoes-footer {height: 120px;}
 }
 
 /*Estilização página aviso*/
