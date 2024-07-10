@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Cardo:regular,italic,700);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
 :root {
     --cor1: #b4445c;
@@ -16,6 +17,8 @@
     --font1: 'Ubuntu', sans-serif;
     --font2: 'Parisienne', sans-serif;
     --font3: 'Cardo', sans-serif;
+    --font4: 'Baskerville', sans-serif;
+    --font5: 'Montserrat', sans-serif;
 }
 
 * {
@@ -72,6 +75,11 @@ html, body {
     0% {transform: translateY(-100vh);}
     100% {transform: translateY(0);}
 }
+@keyframes slider-saida{
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-100vh);}
+}
+
 
 .nav.active .menu {
    display: flex; justify-content: center; align-items: center; flex-direction: column;
@@ -87,10 +95,19 @@ html, body {
     display: flex; align-items: center; justify-content: center;
 }
 
-.nav.active #bnt-mobile {color: var(--cor2);}
+.nav.active #bnt-mobile {opacity: 0;}
 
 #bnt-mobile {
     display: none; color: var(--cor2); cursor: pointer;
+}
+
+#exit-mobile {display: none;}
+
+.nav.active #exit-mobile {
+    display: block;
+    font-family: var(--font5); font-weight: 500; color: var(--cor2);
+    font-size: 2rem; cursor: pointer;
+    position: absolute; right: 3.5rem; z-index: 100000;
 }
 
 #button_presença {
