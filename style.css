@@ -93,7 +93,8 @@ html, body {
 }
 
 #frase {
-    color: var(--cor2); font-family: var(--font2); font-size: 1.8rem;
+    color: var(--cor2); font-family: var(--font2); font-size: 1.6rem;
+    padding: 0 2rem; text-align: center;
 }
 
 /*responsividade-mobile*/
@@ -105,7 +106,7 @@ html, body {
     .header-text h2 {font-size: 1.4rem;}
     .footer_conteiner {height: 8rem;}
     #button_presença {padding: 0.5rem 1rem;}
-    #frase {font-size: 1.4rem;}
+    #frase {font-size: 1.5rem; text-align: center; padding: 0 1rem;}
 
     #bnt-mobile {
         display: block; position: absolute; top: 5rem; right: 5rem; 
@@ -131,13 +132,34 @@ html, body {
 
 }
 
-@media screen and (min-width: 375px) and (max-width: 620px) {
+@media screen and (min-width: 320px) and (max-width: 620px) {
     .header-text h1 {font-size: 2rem;}
     .header-text h2 {font-size: 1rem;}
     .footer_conteiner {height: 5rem;}
     #button_presença {padding: 0.3rem 0.8rem;}
     #frase {font-size: 1rem; margin: 0 1rem;}
 
+    #bnt-mobile {
+        display: block; position: absolute; top: 5rem; right: 5rem; 
+        z-index: 1000000; color: var(--cor7);
+    }
+    .menu {
+        width: 100vw; height: 0vh;
+        position: absolute; top: 0; left: 0;
+        display: flex; align-items: center; justify-content: center; flex-direction: column;
+        background-color: var(--cor3); z-index: 10000; transition: .6s;
+    }
+    .menu a {
+        border-radius: 0; border: 0; width: 100%; padding: 2rem;
+        background-color: var(--cor2); color: var(--cor7); visibility: hidden; 
+        opacity: 0; transition: .6s;
+    }
+
+    .nav.active .menu {height: 100vh;}
+
+    .nav.active .menu a {visibility: visible; opacity: 100%;} 
+
+    .nav.active #bnt-mobile {color: var(--cor2);}
 }
 
 /*Estilização página aviso*/
