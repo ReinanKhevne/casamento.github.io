@@ -115,16 +115,17 @@ html, body {
         width: 100vw; height: 0vh;
         position: absolute; top: 0; left: 0;
         display: flex; align-items: center; justify-content: center; flex-direction: column;
-        background-color: var(--cor3); z-index: 10000; transition: .6s; 
+        background-color: var(--cor3); z-index: 10000; transition: .6s;
     }
     .menu a {
         border-radius: 0; border: 0; width: 100%; padding: 2rem;
-        background-color: var(--cor2); color: var(--cor7); opacity: 0; transition: .6s;
+        background-color: var(--cor2); color: var(--cor7); visibility: hidden; 
+        opacity: 0; transition: .6s;
     }
 
     .nav.active .menu {height: 100vh;}
 
-    .nav.active .menu a {display: block; opacity: 100%;}
+    .nav.active .menu a {visibility: visible; opacity: 100%;} 
 
     .nav.active #bnt-mobile {color: var(--cor2);}
 
