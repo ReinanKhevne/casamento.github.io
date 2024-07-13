@@ -55,7 +55,7 @@ html, body {
 .menu a {
     text-align: center; text-decoration: none; font-size: 1.5rem;
     font-family: var(--font1); color: var(--cor2); border: 0.2rem solid var(--cor2);
-    border-radius: 2rem; padding: 0.5rem 1rem; transition: .3s ease-in-out;
+    border-radius: 2rem; padding: 0.4rem 1.5rem; transition: .3s ease-in-out;
 }
 
 .menu a:hover {
