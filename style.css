@@ -93,7 +93,7 @@ html, body {
 }
 
 #frase {
-    color: var(--cor2); font-family: var(--font2); font-size: 1.6rem;
+    color: var(--cor2); font-family: var(--font3); font-size: 1.6rem;
     padding: 0 2rem; text-align: center;
 }
 
@@ -112,6 +112,7 @@ html, body {
         display: block; position: absolute; top: 5rem; right: 5rem; 
         z-index: 1000000; color: var(--cor7);
     }
+
     .menu {
         width: 100vw; height: 0vh;
         position: absolute; top: 0; left: 0;
@@ -138,7 +139,7 @@ html, body {
     .footer_conteiner {height: 5rem;}
     #button_presença {padding: 0.3rem 0.8rem;}
     #frase {font-size: 1rem; margin: 0 1rem;}
-
+    
     #bnt-mobile {
         display: block; position: absolute; top: 5rem; right: 5rem; 
         z-index: 1000000; color: var(--cor7);
