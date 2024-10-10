@@ -101,6 +101,7 @@ html, body {
 
 #bnt-mobile {display: none; color: var(--cor3); cursor: pointer;}
 
+.nav #bnt-fechar {display: none;}
 
 @media screen and (max-width: 620px) {
     .header-text h1 {font-size: 2.5rem;}
