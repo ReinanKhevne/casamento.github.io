@@ -101,6 +101,7 @@ html, body {
 
 #bnt-mobile {display: none; color: var(--cor3); cursor: pointer;}
 
+
 @media screen and (max-width: 620px) {
     .header-text h1 {font-size: 2.5rem;}
     .header-text h2 {font-size: 1.4rem;}
@@ -125,11 +126,20 @@ html, body {
         opacity: 0; transition: .6s;
     }
 
+    .nav #bnt-mobile {display: block;}
+    .nav #bnt-fechar {display: none;}
+
     .nav.active .menu {height: 100vh;}
 
     .nav.active .menu a {visibility: visible; opacity: 100%;} 
 
-    .nav.active #bnt-mobile {color: var(--cor2);}
+    .nav.active #bnt-mobile {color: var(--cor2); display: none;}
+    .nav.active #bnt-fechar {
+        display: block; z-index: 999999;
+        position: absolute; top: 5rem; right: 5rem;
+        cursor: pointer; font-family: var(--font1);
+    }
+    #bnt-fechar a {text-decoration: none; color: var(--cor2);}
 
 }
 
