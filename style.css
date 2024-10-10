@@ -139,7 +139,7 @@ html, body {
         position: absolute; top: 5rem; right: 5rem;
         cursor: pointer; font-family: var(--font1);
     }
-    #bnt-fechar a {text-decoration: none; color: var(--cor2);}
+    #bnt-fechar a {text-decoration: none; color: var(--cor2); font-size: 2.4rem;}
 
 }
 
