@@ -86,6 +86,8 @@ html, body {
     margin-top: 3.3rem; font-size: 1.2rem; text-align: center; padding: 0 2rem;
 }
 
+#vesiculo {margin-top: 1.3rem;}
+
 /*responsividade-mobile*/
 
 #bnt-mobile {display: none; color: var(--cor3); cursor: pointer;}
@@ -99,6 +101,7 @@ html, body {
     .footer_conteiner {height: 8rem;}
     #button_presença {padding: .3rem .8rem;}
     #frase {font-size: 1.5rem; text-align: center; padding: 0 1rem;}
+    #vesiculo {margin-top: 1.3rem;}
 
     #bnt-mobile {
         display: block; position: absolute; top: 5rem; right: 5rem;
