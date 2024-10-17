@@ -11,7 +11,7 @@
     --cor3: #465f44;
     --cor4: #8a9163;
     --cor5: #d2cea7;
-    --cor6: #000;
+    --cor6: #D6BBF5;
     --cor7: #8c6547; 
 
     --font1: 'Ubuntu', sans-serif;
@@ -44,17 +44,18 @@ html, body {
 /*header-section 01*/
 
 .header {
-    height: 130px; width: 100%; font-size: 2rem;
+    height: 78px; width: 100%; font-size: 2rem;
     display: flex; align-items: center; justify-content: center;
-    background-color: var(--cor7);
 }
 
-.menu {3rem; list-style: none;
+.menu {
+    display: flex;
+    gap: 3rem; list-style: none;
 }
 
 .menu a {
     display: flex; text-decoration: none; font-size: 1.5rem;
-    font-family: var(--font1); color: var(--cor2); gap: .5rem;
+    font-family: var(--font1); color: var(--cor2);
 }
 
 
@@ -68,7 +69,7 @@ html, body {
 .header-text {
     width: 100%;
     display: flex; flex-direction: column; align-items: center;
-    color: var(--cor2); margin-top: 2.2rem;
+    color: var(--cor2); margin-top: 4rem;
 }
 .header-text h1 {
     font-size: 3.5rem; font-family: var(--font3);
@@ -82,7 +83,7 @@ html, body {
 }
 
 .header-text h3 {
-    margin-top: 3.3rem; font-size: 1.2rem;
+    margin-top: 3.3rem; font-size: 1.2rem; text-align: center; padding: 0 2rem;
 }
 
 /*responsividade-mobile*/
@@ -113,6 +114,7 @@ html, body {
         border-radius: 0; border: 0; width: 100%; padding: 2rem;
         background-color: var(--cor2); color: var(--cor7); visibility: hidden; 
         opacity: 0; transition: .6s;
+        display: flex; justify-content: center;
     }
 
     .nav #bnt-mobile {display: block;}
@@ -137,7 +139,7 @@ html, body {
     .header-text h2 {font-size: 1rem;}
     .footer_conteiner {height: 5rem;}
     #button_presença {padding: 0.3rem 0.8rem;}
-    .header-text h3 {font-size: 0.9rem; text-align: center; padding: .3rem 0;}
+    .header-text h3 {font-size: 0.9rem; text-align: center; padding: 0 2.5rem;}
     
     #bnt-mobile {
         display: block; position: absolute; top: 5rem; right: 5rem; 
