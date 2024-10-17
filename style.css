@@ -93,10 +93,11 @@ html, body {
 .nav #bnt-fechar {display: none;}
 
 @media screen and (max-width: 620px) {
-    .header-text h1 {font-size: 2.5rem;}
+    .header-text {margin-top: 10rem;}
+    .header-text h1 {font-size: 3.4rem; margin-bottom: .5rem;}
     .header-text h2 {font-size: 1.4rem;}
     .footer_conteiner {height: 8rem;}
-    #button_presença {padding: 0.5rem 1rem;}
+    #button_presença {padding: .3rem .8rem;}
     #frase {font-size: 1.5rem; text-align: center; padding: 0 1rem;}
 
     #bnt-mobile {
