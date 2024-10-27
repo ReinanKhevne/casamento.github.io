@@ -219,6 +219,7 @@ html, body {
     .infor-avisos {padding: 0rem 1rem; height: 16rem; gap: 1.6rem;}
     .infor-avisos p {font-size: 0.8rem;}
     #exit-aviso {display: block;}
+    #Pix {font-size: .7rem;}
 }
 
 /*Estilização da página dedicatória*/
