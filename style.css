@@ -178,7 +178,7 @@ html, body {
 }
 
 .infor-avisos {
-    width: 100%; height: 12rem;
+    width: 100%; height: 16rem;
     background-color: var(--cor2);
     display: flex; align-items: center; justify-content: center; flex-direction: column;
     gap: 1.3rem; 
@@ -207,6 +207,12 @@ html, body {
     width: 100%; height: 100%;
     position: absolute; top: 0; z-index: -10000;
     background-size: cover; background-position: center;
+}
+
+#Pix {
+    display: flex; text-align: center;
+    font-family: var(--font5);
+    font-size: 1.1rem; color: var(--cor3);
 }
 
 @media screen and (min-width: 320px) and (max-width: 620px) {
