@@ -58,6 +58,9 @@ html, body {
     font-family: var(--font1); color: var(--cor2);
 }
 
+.menu li {
+    margin-left: .7rem;
+}
 
 #button_presença {
     border: 0.3rem solid var(--cor2); border-radius: 2rem;
@@ -160,6 +163,10 @@ html, body {
         border-radius: 0; border: 0; width: 100%; padding: 2rem;
         background-color: var(--cor2); color: var(--cor7); visibility: hidden; 
         opacity: 0; transition: .6s;
+    }
+
+    .menu li {
+        margin-left: .7rem;
     }
 
     .nav.active .menu {height: 100vh;}
