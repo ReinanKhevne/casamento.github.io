@@ -265,3 +265,14 @@ html, body {
     background-image: url(img/mãos.jpg);
     background-size: cover; background-position: bottom center;
 }
+
+.links {
+    display: flex; gap: 2rem;
+    margin: 4rem;
+}
+
+.links a {
+    list-style: none; text-decoration: none;
+    font-family: var(--font1); color: var(--cor7); font-size: 1.1rem;
+    background-color: var(--cor2); border-radius: 3rem; padding: .1rem .4rem;
+}
